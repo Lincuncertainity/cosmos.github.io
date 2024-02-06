@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Set background color to black */
+    overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+.CosmoQuantumBioXplora-section {
+    position: relative;
+    min-height: 100vh; /* Ensure section takes at least the full height of the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #77ac9d; /* Set text color  */
+}
+
+.background {
+    position: fixed; /* Fix the background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/static/images/jwst_imgs.jpg') center/cover no-repeat;
+    filter: brightness(0.8);
+    z-index: -1; /* Send the background to the back */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px; /* Add padding to separate content from the background */
+    overflow: hidden; /* Hide content overflow */
+}
+
+h1, h2, p {
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    margin: 0; /* Remove default margin to center the h1 within the section */
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #436cc0; 
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0077cc;
+}
